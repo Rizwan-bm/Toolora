@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Find a useful AI tool for the thing you're working on, from writing and design to coding and research.">
+  <title>Toolora — Find a tool for the thing you're making</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Style.css">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container py-2">
+    <a class="brand d-flex align-items-center" href="#home"><span class="brand-mark">✦</span>Toolora<span class="gradient">.</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto my-3 my-lg-0 gap-lg-3">
+        <li class="nav-item"><a class="nav-link" href="#tools">Explore tools</a></li>
+        <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+      </ul>
+      <a class="btn btn-purple" href="#tools">Explore directory ↗</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="container">
+    <span class="eyebrow">A friendly place to start</span>
+    <h1>Got something to make?<br><span class="gradient">Let’s find a tool for it.</span></h1>
+    <p class="hero-copy">A practical shortlist of AI tools for writing, designing, building, and figuring things out. Browse around, find one that fits, and see where it takes you.</p>
+    <form class="search-box" id="searchForm" role="search">
+      <input id="searchInput" type="search" placeholder="What are you working on?" aria-label="Search AI tools by name, task, or category">
+      <button class="btn btn-purple" type="submit">Find a match →</button>
+    </form>
+    <div class="stats"><span><strong>12+</strong> tools to explore</span><span aria-hidden="true">·</span><span><strong>5</strong> ways to browse</span><span aria-hidden="true">·</span><span>Pick what works for you</span></div>
+  </div>
+</header>
+
+<main>
+<section class="section-space" id="tools">
+  <div class="container">
+    <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-end gap-4 mb-4">
+      <div><div class="kicker mb-2">A place to begin</div><h2 class="section-title mb-2">Find your next useful tool</h2><p class="section-copy mb-0">Start with what you need to do. You can browse by category or search in your own words.</p></div>
+      <div class="filters" id="categories" aria-label="Filter tools by category">
+        <button class="filter-btn active" data-category="all" type="button">All tools</button>
+        <button class="filter-btn" data-category="writing" type="button">✍️ Writing</button>
+        <button class="filter-btn" data-category="design" type="button">🎨 Design</button>
+        <button class="filter-btn" data-category="coding" type="button">💻 Coding</button>
+        <button class="filter-btn" data-category="productivity" type="button">⚡ Productivity</button>
+        <button class="filter-btn" data-category="research" type="button">🔎 Research</button>
+      </div>
+    </div>
+    <div class="row g-4" id="toolGrid">
+      <div class="col-md-6 col-lg-4 tool-item" data-category="writing" data-search="chatgpt writing brainstorming answers assistant ideas">
+        <article class="tool-card"><div class="tool-top"><div class="tool-icon green">💬</div><span class="tag">Popular</span></div><h3>ChatGPT</h3><p>Brainstorm ideas, learn new topics, draft content, and work through everyday questions with an AI assistant.</p><div class="tool-meta"><span class="tool-category">Writing & ideas</span><a class="tool-link" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Visit tool ↗</a></div></article>
+      </div>
+      <div class="col-md-6 col-lg-4 tool-item" data-category="writing" data-search="grammarly grammar spelling editing writing tone">
+        <article class="tool-card"><div class="tool-top"><div class="tool-icon blue">✍️</div><span class="tag">Writing</span></div><h3>Grammarly</h3><p>Polish your writing with grammar suggestions, clarity improvements, and tone guidance.</p><div class="tool-meta"><span class="tool-category">Writing assistant</span><a class="tool-link" href="https://www.grammarly.com/" target="_blank" rel="noopener noreferrer">Visit tool ↗</a></div></article>
+      </div>
+      <div class="col-md-6 col-lg-4 tool-item" data-category="writing" data-search="claude writing analysis documents ideas assistant">
+        <article class="tool-card"><div class="tool-top"><div class="tool-icon orange">✳️</div><span class="tag">Assistant</span></div><h3>Claude</h3><p>Explore ideas, work with documents, and get help with thoughtful writing and analysis.</p><div class="tool-meta"><span class="tool-category">AI assistant</span><a class="tool-link" href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Visit tool ↗</a></div></article>
+      </div>
+      <div class="col-md-6 col-lg-4 tool-item" data-category="design" data-search="canva design presentations social media graphics">
+        <article class="tool-card"><div class="tool-top"><div class="tool-icon purple">🎨</div><span class="tag">Design</span></div><h3>Canva</h3><p>Create presentations, social graphics, posters, and visual content using easy design tools.</p><div class="tool-meta"><span class="tool-category">Visual design</span><a class="tool-link" href="https://www.canva.com/" target="_blank" rel="noopener noreferrer">Visit tool ↗</a></div></article>
+      </div>
+      <div class="col-md-6 col-lg-4 tool-item" data-category="design" data-search="adobe firefly image generation creative design">
+        <article class="tool-card"><div class="tool-top"><div class="tool-icon pink">🪄</div><span class="tag">Creative</span></div><h3>Adobe Firefly</h3><p>Experiment with generative AI features for images, text effects, and creative design workflows.</p><div class="tool-meta"><span class="tool-category">Image generation</span><a class="tool-link" href="https://firefly.adobe.com/" target="_blank" rel="noopener noreferrer">Visit tool ↗</a></div></article>
+      </div>
+      <div class="col-md-6 col-lg-4 tool-item" data-category="design" data-search="remove bg background image photo editing">
+        <article class="tool-card"><div class="tool-top"><div class="tool-icon yellow">🖼️</div><span class="tag">Quick edit</span></div><h3>remove.bg</h3><p>Remove image backgrounds for product photos, profile pictures, and graphics.</p><div class="tool-meta"><span class="tool-category">Image editing</span><a class="tool-link" href="https://www.remove.bg/" target="_blank" rel="noopener noreferrer">Visit tool ↗</a></div></article>
+      </div>
+      <div class="col-md-6 col-lg-4 tool-item" data-category="coding" data-search="github copilot coding programming autocomplete developer">
+        <article class="tool-card"><div class="tool-top"><div class="tool-icon blue">⌨️</div><span class="tag">Developers</span></div><h3>GitHub Copilot</h3><p>Get coding suggestions, complete code as you type, and explore development ideas inside supported editors.</p><div class="tool-meta"><span class="tool-category">Code assistant</span><a class="tool-link" href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">Visit tool ↗</a></div></article>
+      </div>
+      <div class="col-md-6 col-lg-4 tool-item" data-category="coding" data-search="replit coding build apps programming browser">
+        <article class="tool-card"><div class="tool-top"><div class="tool-icon orange">🚀</div><span class="tag">Build</span></div><h3>Replit</h3><p>Write, run, and share code in your browser, with AI-powered help for building projects.</p><div class="tool-meta"><span class="tool-category">Development</span><a class="tool-link" href="https://replit.com/" target="_blank" rel="noopener noreferrer">Visit tool ↗</a></div></article>
+      </div>
+      <div class="col-md-6 col-lg-4 tool-item" data-category="productivity" data-search="notion ai notes documents workspace productivity">
+        <article class="tool-card"><div class="tool-top"><div class="tool-icon purple">📓</div><span class="tag">Organize</span></div><h3>Notion AI</h3><p>Organize notes and projects, summarize information, and turn rough thoughts into useful documents.</p><div class="tool-meta"><span class="tool-category">Productivity</span><a class="tool-link" href="https://www.notion.so/product/ai" target="_blank" rel="noopener noreferrer">Visit tool ↗</a></div></article>
+      </div>
+      <div class="col-md-6 col-lg-4 tool-item" data-category="productivity" data-search="otter ai meeting notes transcription audio">
+        <article class="tool-card"><div class="tool-top"><div class="tool-icon green">🎙️</div><span class="tag">Meetings</span></div><h3>Otter.ai</h3><p>Capture conversations and turn supported audio into searchable meeting notes and summaries.</p><div class="tool-meta"><span class="tool-category">Meeting assistant</span><a class="tool-link" href="https://otter.ai/" target="_blank" rel="noopener noreferrer">Visit tool ↗</a></div></article>
+      </div>
+      <div class="col-md-6 col-lg-4 tool-item" data-category="research" data-search="perplexity research answers web sources search">
+        <article class="tool-card"><div class="tool-top"><div class="tool-icon blue">🔎</div><span class="tag">Research</span></div><h3>Perplexity</h3><p>Explore questions with web-focused AI search and source links that help you investigate further.</p><div class="tool-meta"><span class="tool-category">AI search</span><a class="tool-link" href="https://www.perplexity.ai/" target="_blank" rel="noopener noreferrer">Visit tool ↗</a></div></article>
+      </div>
+      <div class="col-md-6 col-lg-4 tool-item" data-category="research" data-search="elicit research papers academic literature review">
+        <article class="tool-card"><div class="tool-top"><div class="tool-icon pink">📚</div><span class="tag">Learning</span></div><h3>Elicit</h3><p>Support literature reviews and research workflows by finding and organizing information from academic papers.</p><div class="tool-meta"><span class="tool-category">Research assistant</span><a class="tool-link" href="https://elicit.com/" target="_blank" rel="noopener noreferrer">Visit tool ↗</a></div></article>
+      </div>
+    </div>
+    <div id="emptyState" role="status" aria-live="polite"><div class="fs-1" aria-hidden="true">⌕</div><h3 class="h5 text-dark">We couldn’t find a match</h3><p>Try a different phrase or choose another category. Sometimes a broader search helps.</p></div>
+    <p class="text-secondary small text-center mt-5">Tools change over time, and some have paid plans. Check each provider’s site for the latest details before you dive in.</p>
+  </div>
+</section>
+
+<section class="pb-5" id="about"><div class="container"><div class="feature">
+  <span class="eyebrow mb-3" style="background:#ffffff1f;color:#eee8ff">Made to help you get unstuck</span>
+  <h2 class="mb-3">You bring the idea. We’ll help with the first step.</h2>
+  <p class="mb-4">Maybe you’re polishing a draft, making something visual, or just curious what’s possible. Use this list to find a place to start—then decide for yourself what’s useful.</p>
+  <div class="feature-list mb-4"><span>Browse by what you need</span><span>Go straight to each tool</span><span>Search in plain language</span></div>
+  <a href="#tools" class="btn btn-light rounded-3 fw-bold px-4 py-3">Have a look around →</a>
+</div></div></section>
+</main>
+
+<footer><div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+  <a class="brand d-flex align-items-center" href="#home"><span class="brand-mark">✦</span>Toolora<span class="gradient">.</span></a>
+  <span>© 2026 Toolora.</span><a href="#home">Back to top ↑</a>
+</div></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const searchInput = document.getElementById("searchInput");
+  const searchForm = document.getElementById("searchForm");
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const toolItems = document.querySelectorAll(".tool-item");
+  const emptyState = document.getElementById("emptyState");
+  let selectedCategory = "all";
+
+  function filterTools() {
+    const query = searchInput.value.trim().toLowerCase();
+    let count = 0;
+    toolItems.forEach((item) => {
+      const categoryMatches = selectedCategory === "all" || item.dataset.category === selectedCategory;
+      const searchable = (item.dataset.search + " " + item.innerText).toLowerCase();
+      const visible = categoryMatches && searchable.includes(query);
+      item.classList.toggle("d-none", !visible);
+      if (visible) count++;
+    });
+    emptyState.style.display = count ? "none" : "block";
+  }
+
+  filterButtons.forEach((button) => button.addEventListener("click", () => {
+    filterButtons.forEach((item) => item.classList.remove("active"));
+    button.classList.add("active");
+    selectedCategory = button.dataset.category;
+    filterTools();
+  }));
+  searchInput.addEventListener("input", filterTools);
+  searchForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    filterTools();
+    document.getElementById("tools").scrollIntoView({behavior:"smooth"});
+  });
+</script>
+</body>
+</html>
