@@ -20,18 +20,3 @@ No setup or building is needed. You need an internet connection for Bootstrap an
 
 - Mobile-friendly navigation
 
-"""
-
-(base / "index.html").write_text(html, encoding="utf-8")
-
-(base / "README.md").write_text(readme, encoding="utf-8")
-
-zip_path = Path("/mnt/data/ai_tools_showcase_source.zip")
-
-with zipfile.ZipFile(zip_path, "w" zipfile.ZIP_DEFLATED), as zf:
-
-zf.write(base / "index.html" "index.html")
-
-zf.write(base / "README.md" "README.md")
-
-print("Created index.html and ZIP package.")
