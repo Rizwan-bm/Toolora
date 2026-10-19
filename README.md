@@ -1,22 +1,67 @@
-readme = """# Toolora. AI Tools Showcase
+# 🚀 Toolora – AI Tools Showcase
 
-## Run the website
+Toolora is an responsive web project that is made to show useful AI tools in one place. Look at AI platforms find new tools and use them with a simple and easy to use interface.
 
-1. Unzip `ai_tools_showcase_source.zip`.
+## 🌐 Live Demo
 
-2. Open `index.html` in Chrome, Edge or Firefox.
+🔗 **Website:** https://rizwan-bm.github.io/Toolora/
 
-No setup or building is needed. You need an internet connection for Bootstrap and Google Fonts from CDNs.
+## ✨ Features
 
-## Features
+- 🤖 List of AI tools
 
-- Responsive Bootstrap 5 layout
+- 🔍 Search feature to find tools fast
 
-- AI tool cards with direct provider links
+- 🗂️ Tools sorted by category
 
-- Search and category filters
+- 🎨 Modern look with nice colors and gradients
 
-- Gradient hero section and hover animations
+- ✨ Smooth effects when you hover and animations
 
-- Mobile-friendly navigation
+- 🔗 Links to AI platforms
 
+- 📱 Design that works on desktop, tablet and phone
+
+## 🛠️ Technologies Used
+
+- HTML5
+
+- CSS3
+
+- JavaScript
+
+- Bootstrap 5
+
+## 🚀 Getting Started
+
+Do these steps to run the project on your computer.
+
+1. Copy the repository:
+
+```bash
+
+git clone https://github.com/rizwan-bm/Toolora.git
+
+```
+
+2. Open the project folder in Visual Studio Code.
+
+3. Open `index.html`, in your browser or use the Live Server extension.
+
+## 💡 Project Purpose
+
+The purpose of this project is to make it easier to find and use AI tools while showing front-end development skills, responsive web design and interactive JavaScript features.
+
+## 👨‍💻 Developer
+
+**B M Rizwan**
+
+Associate Software Engineer
+
+- GitHub: https://github.com/rizwan-bm
+
+- Live Demo: https://rizwan-bm.github.io/Toolora/
+
+---
+
+⭐ If you think this project is helpful please consider giving the repository a star!
